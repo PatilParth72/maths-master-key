@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+/* Common Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Center Alignment Helper */
+.center {
+  text-align: center;
+}
+
+/* Header Images */
+.main-header {
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 40px 20px;
+}
+
+.learning-header {
+  background: url('learning-bg.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* Navigation */
+nav {
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+/* Details Expandable */
+details {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.reveal, .module-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active, .module-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
